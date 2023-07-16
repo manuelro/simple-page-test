@@ -1,3 +1,15 @@
+## Simple Page Test (Gatsby + React + Netlify)
+### Form validation
+Despite Formik being recommended for form validation, I decided to use Redux and create a straightforward logical structure and flow for this, utilizing regular expressions and the native browser's `checkValidity` method of inputs to meticulously examine and ensure the data integrity of forms. Incorporating full-fledged form validators can significantly increase the file size, potentially impacting the user experience, so I opted for a more lightweight approach.
+### Shared state management
+I decided to use Redux. Initially, I wanted to leverage the Context API for this, but I realized it would require additional boilerplate code. Therefore, I opted for Redux, a well-tested solution for shared state management in React.
+### Context API for storing shared refs
+I could have easily used a simple ID for the email address input so that I can focus on it from anywhere in the application. However, this approach of using IDs is not scalable and poses the risk of ID duplication, which could lead to complications. Instead, by utilizing the Context API to store and share refs, we eliminate the need for IDs and significantly reduce the chances of duplication issues. This approach allows us to mitigate risks and maintain a more robust and scalable solution.
+### Tailwind for styling and layout
+Tailwind is a great option, not only during the development stages of the application but also for the design team to adhere to parametric spacing and colors. I have decided to install it to accelerate and streamline the development process, gaining speed and efficiency.
+### Netlify for bulding and deployment
+There will be a streamlined pipeline configured in such a way that with every commit to the master branch, the site will be built and deployed to the Netlify server.
+
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.gatsbyjs.com">
